@@ -36,7 +36,7 @@ public class Bike {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "MM-dd-yyyy")
 
     private Date purchaseDate;
-    private Boolean contact;
+    private Boolean contact = false;
 
 
     public String getName() {
@@ -95,13 +95,13 @@ public class Bike {
         this.purchaseDate = purchaseDate;
     }
 
-    public Boolean getContact() {
-        return contact;
-    }
+   // public Boolean getContact() {
+   //     return contact;
+  //  }
 
-    public void setContact(Boolean contact) {
-        this.contact = contact;
-   }
+  //  public void setContact(Boolean contact) {
+   //     this.contact = contact;
+  // }
 
 
 }
